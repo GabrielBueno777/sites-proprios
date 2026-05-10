@@ -2,26 +2,11 @@
 
 ## 🚀 Como Começar
 
-### Opção 1: Abrir Direto no Navegador (Recomendado - Rápido)
-
 1. Navegue até: `site1/`
 2. Clique em `index.html` e abra com seu navegador
 3. Pronto! O site estará funcionando
 
 **Vantagem:** Nenhuma instalação necessária!
-
-### Opção 2: Rodando com Node.js (Servidor Local)
-
-```bash
-# 1. Instale as dependências
-npm install
-
-# 2. Rode o servidor
-npm start
-
-# 3. Abra seu navegador em
-http://localhost:3000
-```
 
 ## 📋 Primeira Vez - Teste Agora
 
@@ -73,8 +58,6 @@ sites-proprios/
 │       ├── auth.js          # Autenticação
 │       ├── dashboard.js     # Planos
 │       └── config.js        # Perfil e recomendações
-├── server.js                 # Servidor Node.js (opcional)
-├── package.json              # Dependências
 ├── README.md                 # Este arquivo
 └── FITPLUS_GUIA.md          # Guia completo detalhado
 ```
