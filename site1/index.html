@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPlus - Seu Guia de Dieta e Treino</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>🏋️ FitPlus</h1>
+                <p>Sua Jornada Fitness Começa Aqui</p>
+            </div>
+            
+            <div class="login-form-container">
+                <ul class="tabs">
+                    <li class="tab-btn active" data-tab="login-tab">Login</li>
+                    <li class="tab-btn" data-tab="register-tab">Cadastro</li>
+                </ul>
+
+                <!-- Tab Login -->
+                <div id="login-tab" class="tab-content active">
+                    <form id="loginForm" class="form">
+                        <div class="form-group">
+                            <label for="loginEmail">Email:</label>
+                            <input type="email" id="loginEmail" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Senha:</label>
+                            <input type="password" id="loginPassword" placeholder="Sua senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+
+                <!-- Tab Cadastro -->
+                <div id="register-tab" class="tab-content">
+                    <form id="registerForm" class="form">
+                        <div class="form-group">
+                            <label for="registerName">Nome Completo:</label>
+                            <input type="text" id="registerName" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Email:</label>
+                            <input type="email" id="registerEmail" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Senha:</label>
+                            <input type="password" id="registerPassword" placeholder="Crie uma senha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword">Confirmar Senha:</label>
+                            <input type="password" id="registerConfirmPassword" placeholder="Confirme a senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

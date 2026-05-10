@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Perfil - FitPlus</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background: linear-gradient(135deg, #004E89 0%, #1B998B 100%);">
+    <div class="dashboard-container">
+        <div class="header">
+            <div>
+                <h1>🏋️ FitPlus - Configure Seu Perfil</h1>
+            </div>
+            <div class="user-info">
+                <button class="btn-logout" onclick="goToDashboard()">Voltar</button>
+                <button class="btn-logout" onclick="logout()">Sair</button>
+            </div>
+        </div>
+
+        <div class="config-container">
+            <h2>Seus Dados Pessoais</h2>
+            <form id="configForm" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" id="altura" min="100" max="250" placeholder="175" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" min="30" max="200" step="0.1" placeholder="80" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" min="16" max="100" placeholder="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Gênero:</label>
+                        <select id="genero" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row full">
+                    <div class="form-group">
+                        <label>Qual é seu objetivo principal?</label>
+                        <div class="objective-options">
+                            <label>
+                                <input type="radio" name="objetivo" value="perder-peso" required>
+                                Perder Peso
+                            </label>
+                            <label>
+                                <input type="radio" name="objetivo" value="ganhar-massa" required>
+                                Ganhar Massa
+                            </label>
+                            <label>
+                                <input type="radio" name="objetivo" value="saude" required>
+                                Melhorar Saúde
+                            </label>
+                            <label>
+                                <input type="radio" name="objetivo" value="definicao" required>
+                                Definição
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row full">
+                    <div class="form-group">
+                        <label>Onde você vai treinar?</label>
+                        <div class="objective-options">
+                            <label>
+                                <input type="radio" name="localTreino" value="casa" required>
+                                Em casa
+                            </label>
+                            <label>
+                                <input type="radio" name="localTreino" value="academia" required>
+                                Na academia
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Salvar e Gerar Plano</button>
+            </form>
+
+            <div id="configMessage" class="message"></div>
+        </div>
+
+        <!-- Recomendações -->
+        <div id="recommendationsContainer"></div>
+        
+        <!-- Plano de Treino -->
+        <div id="workoutContainer"></div>
+        
+        <!-- Plano de Dieta -->
+        <div id="dietContainer"></div>
+
+        <!-- Registro Alimentar -->
+        <div id="foodLogContainer"></div>
+    </div>
+
+    <script src="js/config.js"></script>
+</body>
+</html>

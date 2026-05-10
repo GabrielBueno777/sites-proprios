@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏋️ FitPlus - Iniciante? Veja Isto Primeiro!</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #004E89 0%, #1B998B 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #FF6B35;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #004E89;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FF6B35;
+            padding-bottom: 10px;
+        }
+        .start-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF6B35 0%, #004E89 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        .start-button:hover {
+            transform: scale(1.05);
+        }
+        .code-box {
+            background: #f5f5f5;
+            border-left: 4px solid #FF6B35;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .feature-card h3 {
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+        .step-box {
+            background: #f0f9ff;
+            border-left: 4px solid #1B998B;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .step-box strong {
+            color: #1B998B;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ff6b35;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .test-accounts {
+            background: #e7f3ff;
+            border: 2px solid #0066cc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #FF6B35;
+            color: white;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        a {
+            color: #FF6B35;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🏋️</span>FitPlus - Bem-vindo!</h1>
+        <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 20px;">
+            Sistema de Dieta e Treino Personalizado
+        </p>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="site1/index.html" class="start-button">🚀 Começar Agora</a>
+        </div>
+
+        <!-- Quick Start -->
+        <h2><span class="emoji">⚡</span>Início Rápido</h2>
+        
+        <div class="step-box">
+            <strong>Opção 1 (Mais Fácil - Recomendada):</strong>
+            Clique no botão "Começar Agora" acima e o site abrirá no seu navegador instantaneamente!
+        </div>
+
+        <div class="step-box">
+            <strong>Opção 2 (Com Servidor):</strong>
+            <div class="code-box">
+npm install
+npm start
+            </div>
+            Depois abra: <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+        </div>
+
+        <!-- Features -->
+        <h2><span class="emoji">✨</span>Funcionalidades</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🔐 Login Seguro</h3>
+                <p>Crie sua conta com email e senha</p>
+            </div>
+            <div class="feature-card">
+                <h3>💰 Planos de Assinatura</h3>
+                <p>Basic, Pro e Premium</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Análise de IMC</h3>
+                <p>Recomendações automáticas</p>
+            </div>
+            <div class="feature-card">
+                <h3>💪 Treino Personalizado</h3>
+                <p>4 tipos diferentes</p>
+            </div>
+            <div class="feature-card">
+                <h3>🍽️ Dieta Customizada</h3>
+                <p>Com calorias por refeição</p>
+            </div>
+            <div class="feature-card">
+                <h3>📋 Registro Alimentar</h3>
+                <p>Acompanhe suas refeições</p>
+            </div>
+        </div>
+
+        <!-- Test Accounts -->
+        <div class="test-accounts">
+            <h2><span class="emoji">🧪</span>Contas de Teste</h2>
+            <p style="margin-bottom: 15px;">Use essas credenciais para testar imediatamente:</p>
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th>Plano</th>
+                </tr>
+                <tr>
+                    <td>teste@email.com</td>
+                    <td>senha123</td>
+                    <td>Basic</td>
+                </tr>
+            </table>
+            <p style="margin-top: 15px; color: #0066cc;">Ou crie uma nova conta clicando em "Cadastro"</p>
+        </div>
+
+        <!-- Plans -->
+        <h2><span class="emoji">💎</span>Planos de Assinatura</h2>
+        <table>
+            <tr>
+                <th>Plano</th>
+                <th>Preço</th>
+                <th>Recursos</th>
+            </tr>
+            <tr>
+                <td><strong>Basic</strong></td>
+                <td><strong>R$ 29,90/mês</strong></td>
+                <td>Treinos básicos + Dieta genérica</td>
+            </tr>
+            <tr>
+                <td><strong>Pro</strong></td>
+                <td><strong>R$ 79,90/mês</strong></td>
+                <td>Treino personalizado + Análise IMC + Registro</td>
+            </tr>
+            <tr>
+                <td><strong>Premium</strong></td>
+                <td><strong>R$ 149,90/mês</strong></td>
+                <td>Tudo + Coach + Consultoria + Suporte 24/7</td>
+            </tr>
+        </table>
+
+        <!-- Objectives -->
+        <h2><span class="emoji">🎯</span>Objetivos Disponíveis</h2>
+        <ul>
+            <li><strong>Perder Peso:</strong> Cardio + Alta Intensidade (1800 kcal/dia)</li>
+            <li><strong>Ganhar Massa:</strong> Musculação + Força (2800 kcal/dia)</li>
+            <li><strong>Saúde:</strong> Equilibrado + Bem-estar (2000 kcal/dia)</li>
+            <li><strong>Definição:</strong> Musculação + Cardio (2200 kcal/dia)</li>
+        </ul>
+
+        <!-- How It Works -->
+        <h2><span class="emoji">🔄</span>Como Funciona</h2>
+        <ol>
+            <li><strong>Crie uma Conta</strong> - Login com email e senha</li>
+            <li><strong>Escolha um Plano</strong> - Basic, Pro ou Premium</li>
+            <li><strong>Preencha Seus Dados</strong> - Altura, peso, idade, gênero</li>
+            <li><strong>Escolha Seu Objetivo</strong> - Perder peso, ganhar massa, saúde ou definição</li>
+            <li><strong>Sistema Gera Seu Plano</strong> - Treino + Dieta personalizado</li>
+            <li><strong>Registre Suas Refeições</strong> - Acompanhe calorias diárias</li>
+            <li><strong>Veja Resultados</strong> - Em 4 semanas!</li>
+        </ol>
+
+        <!-- Example -->
+        <h2><span class="emoji">📖</span>Exemplo Prático</h2>
+        <div class="step-box">
+            <strong>João (32 anos, 95kg, 175cm):</strong>
+            <ul style="margin-top: 10px;">
+                <li>Sistema calcula IMC: 30.9 (Obesidade)</li>
+                <li>Recomenda: Plano Perda de Peso</li>
+                <li>Dieta: 1800 kcal/dia com 6 refeições balanceadas</li>
+                <li>Treino: 5 dias de cardio + musculação, 2 dias de descanso</li>
+                <li>Resultado esperado: 4-5kg em 4 semanas</li>
+            </ul>
+        </div>
+
+        <!-- What's Included -->
+        <h2><span class="emoji">📦</span>O Que Está Incluído</h2>
+        <table>
+            <tr>
+                <th>Recurso</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Login/Registro</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>3 Planos de Assinatura</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>Cálculo de IMC</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>4 Planos de Treino</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>4 Planos de Dieta</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>Registro Alimentar</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>Design Responsivo</td>
+                <td>✅ Completo</td>
+            </tr>
+            <tr>
+                <td>Armazenamento de Dados</td>
+                <td>✅ Completo</td>
+            </tr>
+        </table>
+
+        <!-- File Structure -->
+        <h2><span class="emoji">📁</span>Estrutura de Arquivos</h2>
+        <div class="code-box">
+sites-proprios/
+├── site1/
+│   ├── index.html           ← Página de Login
+│   ├── dashboard.html       ← Escolher Plano
+│   ├── config.html          ← Configurar Perfil
+│   ├── index.css            ← Estilos
+│   └── js/
+│       ├── auth.js          ← Autenticação
+│       ├── dashboard.js     ← Planos
+│       └── config.js        ← Treino + Dieta
+├── server.js                ← Servidor (opcional)
+├── package.json             ← Dependências
+├── README.md                ← Guia rápido
+└── FITPLUS_GUIA.md         ← Guia completo
+        </div>
+
+        <!-- Tips -->
+        <h2><span class="emoji">💡</span>Dicas Importantes</h2>
+        <div class="note">
+            <strong>✓ Preencha seus dados com precisão</strong> para que o sistema gere recomendações corretas
+        </div>
+        <div class="note">
+            <strong>✓ Escolha o objetivo real</strong> para obter um plano adequado
+        </div>
+        <div class="note">
+            <strong>✓ Registre suas refeições diariamente</strong> para acompanhar o progresso
+        </div>
+        <div class="note">
+            <strong>✓ Siga o plano consistentemente</strong> por pelo menos 4 semanas
+        </div>
+
+        <!-- Next Steps -->
+        <h2><span class="emoji">🚀</span>Próximos Passos</h2>
+        <ol>
+            <li>Clique em "Começar Agora" acima</li>
+            <li>Cadastre sua conta ou use: teste@email.com / senha123</li>
+            <li>Escolha um plano de assinatura</li>
+            <li>Preencha seu perfil pessoal</li>
+            <li>Veja seu plano personalizado</li>
+            <li>Comece a registrar suas refeições</li>
+            <li>Acompanhe seu progresso!</li>
+        </ol>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="site1/index.html" class="start-button">🏋️ Comece Seu Treino Agora!</a>
+        </div>
+
+        <!-- Support -->
+        <h2><span class="emoji">❓</span>Precisa de Ajuda?</h2>
+        <ul>
+            <li>Leia o arquivo <strong>README.md</strong> para instruções rápidas</li>
+            <li>Leia <strong>FITPLUS_GUIA.md</strong> para guia completo</li>
+            <li>Abra o console (F12) para ver mensagens de erro</li>
+            <li>Verifique se localStorage está habilitado no navegador</li>
+        </ul>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>FitPlus v1.0</strong> - Seu Guia de Dieta e Treino Personalizado</p>
+            <p>Desenvolvido com ❤️ usando HTML5, CSS3 e JavaScript</p>
+            <p>© 2026 - Todos os direitos reservados</p>
+        </div>
+    </div>
+</body>
+</html>
+//4.784
